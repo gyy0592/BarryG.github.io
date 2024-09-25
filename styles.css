@@ -79,22 +79,18 @@ p, ul {
 }
 
 ul {
-    list-style-type: none;
-    padding-left: 0;
+    list-style-type: disc; /* Native bullet points */
+    padding-left: 20px; /* Add space to align bullets properly */
 }
 
 ul li {
     margin-bottom: 10px;
-    padding-left: 15px;
-    position: relative;
+    padding-left: 0; /* Reset padding */
+    position: static; /* Remove relative positioning */
 }
 
 ul li:before {
-    content: '•';
-    color: #333;
-    position: absolute;
-    left: 0;
-    font-size: 1.5em;
+    content: none; /* Remove the manually added bullet */
 }
 
 footer {
